@@ -2,7 +2,31 @@
   width: 100%;
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-
+  .intermediary-companies {
+    .company-base {
+      &__item:nth-child(2) {
+        left: 1%;
+      }
+      &__name {
+        width: 300px;
+      }
+      &__sum {
+        left: 85%;
+      }
+    }
+  }
+  .rating__item {
+    min-height: 40px;
+  }
+  .manufacturers__item {
+    min-height: 40px;
+  }
+  .sellers__item {
+    min-height: 40px;
+  }
+  .customers__item {
+    min-height: 40px;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -11,15 +35,28 @@
     padding-left: 0!important;
   }
   .header__nav {
-    .menu li {
-      margin-right: 8px;
+    .menu {
+      margin: auto;
+      padding-top: 20px;
+    }
+    .header__logo {
+      margin: auto;
     }
   }
   .russian-participants {
+    .company__sum {
+      left: 85%;
+    }
+    .companies__sum--base {
+      left: 85%;
+    }
     .partners {
       flex-direction: column;
       &__sum {
-        left: 170px;
+        left: 83%;
+      }
+      &__name {
+        margin: auto;
       }
     }
     &__company {
@@ -31,4 +68,63 @@
       }
     }
   }
+  .intermediary-companies {
+    .company-base {
+      flex-direction: column;
+      &__item:nth-child(2) {
+        margin: auto;
+        left: 0;
+      }
+      &__name {
+        width: 200px;
+      }
+      .russian-partner {
+        .partners {
+          &__name {
+            width: 200px;
+          }
+          &__sum {
+            left: 85%;
+          }
+        }
+      }
+      &__sum {
+        left: 85%;
+        &--other {
+          left: 220px;
+        }
+      }
+    }
+  }
+  .foreign-producers .company-foreign__sum {
+    left: 258px;
+  }
+  .foreign-producers .company-producer__sum {
+    left: 258px;
+  }
+  .foreign-producers .company-russian__sum {
+    left: 258px;
+  }
+  .russian-producers__wrap {
+    flex-direction: column!important;
+  }
+  .russian-producers__wrap {
+    .rating__item {
+      width: 50%;
+      margin: auto;
+    }
+    .manufacturers {
+      width: 100%!important;
+      margin: auto;
+    }
+    .sellers {
+      width: 100%!important;
+      margin: auto;
+    }
+    .customers {
+      width: 100%!important;
+      margin: auto;
+    }
+  }
+
 }

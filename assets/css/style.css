@@ -42,7 +42,7 @@ body {
   background-color: #666666;
   height: auto;
   padding: 20px; }
-  .header__wrap, .header__nav, .header__nav .menu, .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners {
+  .header__wrap, .header__nav, .header__nav .menu, .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners, .russian-producers .partners {
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: horizontal;
@@ -63,7 +63,7 @@ body {
           color: #000;
           text-shadow: 2px 2px 8px #380070; }
 
-.russian-participants, .intermediary-companies, .foreign-producers {
+.russian-participants, .intermediary-companies, .foreign-producers, .russian-producers {
   padding: 40px 0;
   font-weight: bold;
   text-transform: uppercase;
@@ -76,9 +76,9 @@ body {
   .russian-participants__h1 {
     font-size: 18px;
     padding-bottom: 40px; }
-  .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners {
+  .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners, .russian-producers .partners {
     justify-content: space-around; }
-    .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
+    .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .russian-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
       position: relative;
       top: 10px;
       left: 280px;
@@ -86,22 +86,45 @@ body {
       height: 20px;
       background-color: #0f75a2;
       color: #fff; }
-  .russian-participants .company__wrap, .intermediary-companies .company__wrap, .foreign-producers .company__wrap {
+  .russian-participants .company__wrap, .intermediary-companies .company__wrap, .foreign-producers .company__wrap, .russian-producers .company__wrap {
     margin: auto; }
-  .russian-participants .company__item, .intermediary-companies .company__item, .foreign-producers .company__item, .foreign-producers .company-producer__name {
+  .russian-participants .company__item--base, .intermediary-companies .company__item--base, .foreign-producers .company__item--base, .russian-producers .company__item--base, .russian-participants .partners__name, .intermediary-companies .partners__name, .foreign-producers .partners__name, .russian-producers .partners__name, .foreign-producers .company-foreign__name, .foreign-producers .company-russian__name {
+    border: 1px solid #0f75a2;
+    margin-bottom: 40px;
+    width: 200px;
+    min-height: 40px;
+    padding: 20px 50px 20px 50px;
+    background-color: #fff; }
+  .russian-participants .company__name, .intermediary-companies .company__name, .foreign-producers .company__name, .russian-producers .company__name {
     border: 2px solid #0f75a2;
     padding: 20px 50px 20px 50px;
     background-color: #c5d3dd;
     width: 200px;
     min-height: 40px;
     margin-bottom: 40px; }
-    .russian-participants .company__item--base, .intermediary-companies .company__item--base, .foreign-producers .company__item--base, .russian-participants .partners__name, .intermediary-companies .partners__name, .foreign-producers .partners__name, .foreign-producers .company-foreign__name, .foreign-producers .company-russian__name {
-      border: 1px solid #0f75a2;
-      margin-bottom: 40px;
-      width: 200px;
-      min-height: 40px;
-      padding: 20px 50px 20px 50px;
-      background-color: #fff; }
+  .russian-participants .company__sum, .intermediary-companies .company__sum, .foreign-producers .company__sum, .russian-producers .company__sum {
+    position: relative;
+    top: 10px;
+    left: 280px;
+    width: 50px;
+    height: 20px;
+    background-color: #0f75a2;
+    color: #fff; }
+  .russian-participants .companies__name--base, .intermediary-companies .companies__name--base, .foreign-producers .companies__name--base, .russian-producers .companies__name--base {
+    border: 1px solid #0f75a2;
+    margin-bottom: 40px;
+    width: 200px;
+    min-height: 40px;
+    padding: 20px 50px 20px 50px;
+    background-color: #fff; }
+  .russian-participants .companies__sum--base, .intermediary-companies .companies__sum--base, .foreign-producers .companies__sum--base, .russian-producers .companies__sum--base {
+    position: relative;
+    top: 10px;
+    left: 280px;
+    width: 50px;
+    height: 20px;
+    background-color: #0f75a2;
+    color: #fff; }
 
 .intermediary-companies__h1 {
   font-size: 18px;
@@ -161,7 +184,7 @@ body {
   font-size: 18px;
   padding-bottom: 40px; }
 
-.foreign-producers .company-producer {
+.foreign-producers .company-producer, .foreign-producers .russian-producers__wrap .rating, .russian-producers__wrap .foreign-producers .rating, .foreign-producers .russian-producers__wrap .manufacturers, .russian-producers__wrap .foreign-producers .manufacturers, .foreign-producers .russian-producers__wrap .sellers, .russian-producers__wrap .foreign-producers .sellers, .foreign-producers .russian-producers__wrap .customers, .russian-producers__wrap .foreign-producers .customers {
   display: -webkit-box;
   display: flex;
   -webkit-box-orient: vertical;
@@ -169,6 +192,13 @@ body {
           flex-direction: column; }
   .foreign-producers .company-producer__item {
     margin: auto; }
+  .foreign-producers .company-producer__name {
+    border: 2px solid #0f75a2;
+    padding: 20px 50px 20px 50px;
+    background-color: #c5d3dd;
+    width: 200px;
+    min-height: 40px;
+    margin-bottom: 40px; }
 
 .foreign-producers .company-foreign, .foreign-producers .company-russian {
   display: -webkit-box;
@@ -183,22 +213,112 @@ body {
 .container {
   width: 100%; }
 
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .intermediary-companies .company-base__item:nth-child(2) {
+    left: 1%; }
+  .intermediary-companies .company-base__name {
+    width: 300px; }
+  .intermediary-companies .company-base__sum {
+    left: 85%; }
+  .rating__item, .russian-producers__wrap .manufacturers__item, .russian-producers__wrap .sellers__item, .russian-producers__wrap .customers__item {
+    min-height: 40px; }
+  .manufacturers__item {
+    min-height: 40px; }
+  .sellers__item {
+    min-height: 40px; }
+  .customers__item {
+    min-height: 40px; } }
+
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .container {
     padding-right: 0 !important;
     padding-left: 0 !important; }
-  .header__nav .menu li {
-    margin-right: 8px; }
-  .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners {
+  .header__nav .menu {
+    margin: auto;
+    padding-top: 20px; }
+  .header__nav .header__logo {
+    margin: auto; }
+  .russian-participants .company__sum, .intermediary-companies .company__sum, .foreign-producers .company__sum, .russian-producers .company__sum {
+    left: 85%; }
+  .russian-participants .companies__sum--base, .intermediary-companies .companies__sum--base, .foreign-producers .companies__sum--base, .russian-producers .companies__sum--base {
+    left: 85%; }
+  .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners, .russian-producers .partners {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column; }
-    .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
-      left: 170px; }
+    .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .russian-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
+      left: 83%; }
+    .russian-participants .partners__name, .intermediary-companies .partners__name, .foreign-producers .partners__name, .russian-producers .partners__name, .foreign-producers .company-foreign__name, .foreign-producers .company-russian__name {
+      margin: auto; }
   .russian-participants__company {
     padding: 20px 0; }
     .russian-participants__company-base {
-      padding: 20px 0; } }
+      padding: 20px 0; }
+  .intermediary-companies .company-base {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    .intermediary-companies .company-base__item:nth-child(2) {
+      margin: auto;
+      left: 0; }
+    .intermediary-companies .company-base__name {
+      width: 200px; }
+    .intermediary-companies .company-base .russian-partner .partners__name, .intermediary-companies .company-base .russian-partner .foreign-producers .company-foreign__name, .foreign-producers .intermediary-companies .company-base .russian-partner .company-foreign__name, .intermediary-companies .company-base .russian-partner .foreign-producers .company-russian__name, .foreign-producers .intermediary-companies .company-base .russian-partner .company-russian__name {
+      width: 200px; }
+    .intermediary-companies .company-base .russian-partner .partners__sum, .intermediary-companies .company-base .russian-partner .company-base__sum, .intermediary-companies .company-base .russian-partner .company-base__sum--other, .intermediary-companies .company-base .russian-partner .foreign-producers .company-producer__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-producer__sum, .intermediary-companies .company-base .russian-partner .foreign-producers .company-foreign__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-foreign__sum, .intermediary-companies .company-base .russian-partner .foreign-producers .company-russian__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-russian__sum {
+      left: 85%; }
+    .intermediary-companies .company-base__sum {
+      left: 85%; }
+      .intermediary-companies .company-base__sum--other {
+        left: 220px; }
+  .foreign-producers .company-foreign__sum {
+    left: 258px; }
+  .foreign-producers .company-producer__sum {
+    left: 258px; }
+  .foreign-producers .company-russian__sum {
+    left: 258px; }
+  .russian-producers__wrap {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+            flex-direction: column !important; }
+  .russian-producers__wrap .rating__item, .russian-producers__wrap .manufacturers__item, .russian-producers__wrap .sellers__item, .russian-producers__wrap .customers__item {
+    width: 50%;
+    margin: auto; }
+  .russian-producers__wrap .manufacturers {
+    width: 100% !important;
+    margin: auto; }
+  .russian-producers__wrap .sellers {
+    width: 100% !important;
+    margin: auto; }
+  .russian-producers__wrap .customers {
+    width: 100% !important;
+    margin: auto; } }
+
+.russian-producers h2 {
+  font-size: 16px; }
+
+.russian-producers__h1 {
+  font-size: 18px;
+  padding-bottom: 40px; }
+
+.russian-producers__wrap {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .russian-producers__wrap .rating__item, .russian-producers__wrap .manufacturers__item, .russian-producers__wrap .sellers__item, .russian-producers__wrap .customers__item {
+    border: 1px solid #0f75a2;
+    padding: 10px;
+    margin-bottom: 20px; }
+  .russian-producers__wrap .manufacturers {
+    width: 25%; }
+  .russian-producers__wrap .sellers {
+    width: 25%; }
+  .russian-producers__wrap .customers {
+    width: 25%; }
 
 body {
   background-color: #e2e2e2; }
@@ -211,7 +331,9 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    width: 750px; } }
+    width: 750px;
+    padding-left: 0;
+    padding-right: 0; } }
 
 @media (min-width: 992px) {
   .container {

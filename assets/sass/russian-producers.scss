@@ -1,0 +1,45 @@
+.russian-producers {
+  @extend .russian-participants;
+  h2 {
+    font-size: 16px;
+  }
+  &__h1 {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .rating {
+      @extend .company-producer;
+      &__item {
+        border: 1px solid #0f75a2;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+    }
+    .manufacturers {
+      @extend .company-producer;
+      width: 25%;
+      &__item {
+        @extend .rating__item;
+      }
+    }
+    .sellers {
+      @extend .company-producer;
+      width: 25%;
+      &__item {
+        @extend .rating__item;
+      }
+    }
+    .customers {
+      @extend .company-producer;
+      width: 25%;
+      &__item {
+        @extend .rating__item;
+      }
+    }
+  }
+}

@@ -30,12 +30,6 @@
       margin: auto;
     }
     &__item {
-      border: 2px solid #0f75a2;
-      padding: 20px 50px 20px 50px;
-      background-color: #c5d3dd;
-      width: 200px;
-      min-height: 40px;
-      margin-bottom: 40px;
       &--base {
         border: 1px solid #0f75a2;
         margin-bottom: 40px;
@@ -45,5 +39,39 @@
         background-color: #fff;
       }
     }
+    &__name {
+      border: 2px solid #0f75a2;
+      padding: 20px 50px 20px 50px;
+      background-color: #c5d3dd;
+      width: 200px;
+      min-height: 40px;
+      margin-bottom: 40px;
+    }
+    &__sum {
+      position: relative;
+      top: 10px;
+      left: 280px;
+      width: 50px;
+      height: 20px;
+      background-color: #0f75a2;
+      color: #fff;
+    }
+  }
+  .companies__name--base {
+    border: 1px solid #0f75a2;
+    margin-bottom: 40px;
+    width: 200px;
+    min-height: 40px;
+    padding: 20px 50px 20px 50px;
+    background-color: #fff;
+  }
+  .companies__sum--base {
+    position: relative;
+    top: 10px;
+    left: 280px;
+    width: 50px;
+    height: 20px;
+    background-color: #0f75a2;
+    color: #fff;
   }
 }
