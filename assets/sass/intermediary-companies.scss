@@ -1,0 +1,69 @@
+.intermediary-companies {
+  @extend .russian-participants;
+  &__h1 {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  .partners {
+    @extend .header__wrap;
+    justify-content: space-around;
+    &__name {
+      border: 1px solid #0f75a2;
+      margin-bottom: 40px;
+      width: 200px;
+      min-height: 40px;
+      padding: 20px 50px 20px 50px;
+      background-color: #fff;
+    }
+    &__sum {
+      position: relative;
+      top: 10px;
+      left: 280px;
+      width: 50px;
+      height: 20px;
+      background-color: #0f75a2;
+      color: #fff;
+    }
+  }
+  .company-base {
+    margin: auto;
+    display: flex;
+    &__item:nth-child(2) {
+      position: relative;
+      left: 20%;
+    }
+    &__sum {
+      @extend .partners__sum;
+      left: 580px;
+      &--other {
+        @extend .partners__sum;
+        left: 220px;
+      }
+    }
+    &__name {
+      border: 2px solid #0f75a2;
+      padding: 20px 50px 20px 50px;
+      background-color: #c5d3dd;
+      width: 500px;
+      min-height: 40px;
+      margin-bottom: 40px;
+      &--other {
+        border: 1px solid #0f75a2;
+        padding: 20px 20px 20px 20px;
+        background-color: #fff;
+        width: 200px;
+        min-height: 20px;
+        margin-bottom: 40px;
+      }
+    }
+    .russian-partner {
+      display: inline-block;
+      .partners__name {
+        width: 320px;
+      }
+      .partners__sum {
+        left: 400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.russian-participants {
+  padding: 40px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  &__h1 {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  .partners {
+    @extend .header__wrap;
+    justify-content: space-around;
+    &__name {
+      @extend .company__item--base;
+    }
+    &__sum {
+      position: relative;
+      top: 10px;
+      left: 280px;
+      width: 50px;
+      height: 20px;
+      background-color: #0f75a2;
+      color: #fff;
+    }
+  }
+  .company {
+    &__wrap {
+      margin: auto;
+    }
+    &__item {
+      border: 2px solid #0f75a2;
+      padding: 20px 50px 20px 50px;
+      background-color: #c5d3dd;
+      width: 200px;
+      min-height: 40px;
+      margin-bottom: 40px;
+      &--base {
+        border: 1px solid #0f75a2;
+        margin-bottom: 40px;
+        width: 200px;
+        min-height: 40px;
+        padding: 20px 50px 20px 50px;
+        background-color: #fff;
+      }
+    }
+  }
+}

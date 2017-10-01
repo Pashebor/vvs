@@ -1,0 +1,30 @@
+.header {
+  background-color: #666666;
+  height: auto;
+  padding: 20px;
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__nav {
+    @extend .header__wrap;
+    justify-content: space-between;
+    .menu {
+      @extend .header__wrap;
+      li {
+        list-style-type: none;
+        margin-right: 40px;
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-weight: bold;
+          &:hover {
+            color: #000;
+            text-shadow: 2px 2px 8px #380070;
+          }
+        }
+      }
+    }
+  }
+}

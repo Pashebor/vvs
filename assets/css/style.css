@@ -1,0 +1,222 @@
+@font-face {
+  font-family: FontAwesome;
+  src: url("../fonts/fontawesome-webfont.eot?v=3.0.1");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1") format("embedded-opentype"), url("../fonts/FontAwesome.otf?v=3.0.1") format("opentype"), url("../fonts/fontawesome-webfont.woff?v=3.0.1") format("woff"), url("../fonts/fontawesome-webfont.woff2?v=3.0.1") format("woff2"), url("../fonts/fontawesome-webfont.ttf?v=3.0.1") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: OpenSansLight;
+  src: url(../fonts/OpenSansLight.eot);
+  src: url(../fonts/OpenSansLight.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Light.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: OpenSansRegular;
+  src: url(../fonts/OpenSansRegular.eot);
+  src: url(../fonts/OpenSansRegular.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../fonts/OpenSansBold.eot);
+  src: url(../fonts/OpenSansBold.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Bold.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: RobotoSlabRegular;
+  src: url(../fonts/RobotoSlab-Regular.ttf); }
+
+@font-face {
+  font-family: RobotoSlabBold;
+  src: url(../fonts/RobotoSlab-Bold.ttf); }
+
+body {
+  font-family: OpenSansLight;
+  font-size: 16px; }
+
+.header {
+  background-color: #666666;
+  height: auto;
+  padding: 20px; }
+  .header__wrap, .header__nav, .header__nav .menu, .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    flex-wrap: wrap; }
+  .header__nav {
+    -webkit-box-pack: justify;
+            justify-content: space-between; }
+    .header__nav .menu li {
+      list-style-type: none;
+      margin-right: 40px; }
+      .header__nav .menu li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold; }
+        .header__nav .menu li a:hover {
+          color: #000;
+          text-shadow: 2px 2px 8px #380070; }
+
+.russian-participants, .intermediary-companies, .foreign-producers {
+  padding: 40px 0;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .russian-participants__h1 {
+    font-size: 18px;
+    padding-bottom: 40px; }
+  .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners {
+    justify-content: space-around; }
+    .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
+      position: relative;
+      top: 10px;
+      left: 280px;
+      width: 50px;
+      height: 20px;
+      background-color: #0f75a2;
+      color: #fff; }
+  .russian-participants .company__wrap, .intermediary-companies .company__wrap, .foreign-producers .company__wrap {
+    margin: auto; }
+  .russian-participants .company__item, .intermediary-companies .company__item, .foreign-producers .company__item, .foreign-producers .company-producer__name {
+    border: 2px solid #0f75a2;
+    padding: 20px 50px 20px 50px;
+    background-color: #c5d3dd;
+    width: 200px;
+    min-height: 40px;
+    margin-bottom: 40px; }
+    .russian-participants .company__item--base, .intermediary-companies .company__item--base, .foreign-producers .company__item--base, .russian-participants .partners__name, .intermediary-companies .partners__name, .foreign-producers .partners__name, .foreign-producers .company-foreign__name, .foreign-producers .company-russian__name {
+      border: 1px solid #0f75a2;
+      margin-bottom: 40px;
+      width: 200px;
+      min-height: 40px;
+      padding: 20px 50px 20px 50px;
+      background-color: #fff; }
+
+.intermediary-companies__h1 {
+  font-size: 18px;
+  padding-bottom: 40px; }
+
+.intermediary-companies .partners {
+  justify-content: space-around; }
+  .intermediary-companies .partners__name, .intermediary-companies .foreign-producers .company-foreign__name, .foreign-producers .intermediary-companies .company-foreign__name, .intermediary-companies .foreign-producers .company-russian__name, .foreign-producers .intermediary-companies .company-russian__name {
+    border: 1px solid #0f75a2;
+    margin-bottom: 40px;
+    width: 200px;
+    min-height: 40px;
+    padding: 20px 50px 20px 50px;
+    background-color: #fff; }
+  .intermediary-companies .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .intermediary-companies .foreign-producers .company-producer__sum, .foreign-producers .intermediary-companies .company-producer__sum, .intermediary-companies .foreign-producers .company-foreign__sum, .foreign-producers .intermediary-companies .company-foreign__sum, .intermediary-companies .foreign-producers .company-russian__sum, .foreign-producers .intermediary-companies .company-russian__sum {
+    position: relative;
+    top: 10px;
+    left: 280px;
+    width: 50px;
+    height: 20px;
+    background-color: #0f75a2;
+    color: #fff; }
+
+.intermediary-companies .company-base {
+  margin: auto;
+  display: -webkit-box;
+  display: flex; }
+  .intermediary-companies .company-base__item:nth-child(2) {
+    position: relative;
+    left: 20%; }
+  .intermediary-companies .company-base__sum {
+    left: 580px; }
+    .intermediary-companies .company-base__sum--other {
+      left: 220px; }
+  .intermediary-companies .company-base__name {
+    border: 2px solid #0f75a2;
+    padding: 20px 50px 20px 50px;
+    background-color: #c5d3dd;
+    width: 500px;
+    min-height: 40px;
+    margin-bottom: 40px; }
+    .intermediary-companies .company-base__name--other {
+      border: 1px solid #0f75a2;
+      padding: 20px 20px 20px 20px;
+      background-color: #fff;
+      width: 200px;
+      min-height: 20px;
+      margin-bottom: 40px; }
+  .intermediary-companies .company-base .russian-partner {
+    display: inline-block; }
+    .intermediary-companies .company-base .russian-partner .partners__name, .intermediary-companies .company-base .russian-partner .foreign-producers .company-foreign__name, .foreign-producers .intermediary-companies .company-base .russian-partner .company-foreign__name, .intermediary-companies .company-base .russian-partner .foreign-producers .company-russian__name, .foreign-producers .intermediary-companies .company-base .russian-partner .company-russian__name {
+      width: 320px; }
+    .intermediary-companies .company-base .russian-partner .partners__sum, .intermediary-companies .company-base .russian-partner .company-base__sum, .intermediary-companies .company-base .russian-partner .company-base__sum--other, .intermediary-companies .company-base .russian-partner .foreign-producers .company-producer__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-producer__sum, .intermediary-companies .company-base .russian-partner .foreign-producers .company-foreign__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-foreign__sum, .intermediary-companies .company-base .russian-partner .foreign-producers .company-russian__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-russian__sum {
+      left: 400px; }
+
+.foreign-producers__h1 {
+  font-size: 18px;
+  padding-bottom: 40px; }
+
+.foreign-producers .company-producer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column; }
+  .foreign-producers .company-producer__item {
+    margin: auto; }
+
+.foreign-producers .company-foreign, .foreign-producers .company-russian {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+          justify-content: space-evenly; }
+
+.container {
+  width: 100%; }
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important; }
+  .header__nav .menu li {
+    margin-right: 8px; }
+  .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column; }
+    .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
+      left: 170px; }
+  .russian-participants__company {
+    padding: 20px 0; }
+    .russian-participants__company-base {
+      padding: 20px 0; } }
+
+body {
+  background-color: #e2e2e2; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px; } }
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px; } }

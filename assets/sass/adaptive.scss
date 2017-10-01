@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .container {
+    padding-right: 0!important;
+    padding-left: 0!important;
+  }
+  .header__nav {
+    .menu li {
+      margin-right: 8px;
+    }
+  }
+  .russian-participants {
+    .partners {
+      flex-direction: column;
+      &__sum {
+        left: 170px;
+      }
+    }
+    &__company {
+      padding: 20px 0;
+
+      &-base {
+        padding: 20px 0;
+
+      }
+    }
+  }
+}

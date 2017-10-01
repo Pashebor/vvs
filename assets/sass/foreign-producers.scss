@@ -1,0 +1,41 @@
+.foreign-producers {
+  @extend .russian-participants;
+  &__h1 {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  .company-producer {
+    display: flex;
+    flex-direction: column;
+    &__item {
+      margin: auto;
+    }
+    &__sum {
+      @extend .partners__sum;
+    }
+    &__name {
+      @extend .company__item;
+    }
+  }
+  .company-foreign {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    &__sum {
+      @extend .partners__sum;
+    }
+    &__name {
+      @extend .partners__name;
+    }
+  }
+  .company-russian {
+    @extend .company-foreign;
+    &__sum {
+      @extend .partners__sum;
+    }
+    &__name {
+      @extend .partners__name;
+    }
+  }
+}
