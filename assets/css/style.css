@@ -78,8 +78,6 @@ body {
     padding-bottom: 40px; }
   .russian-participants .partners, .intermediary-companies .partners, .foreign-producers .partners, .russian-producers .partners {
     justify-content: space-around; }
-    .russian-participants .partners__item, .intermediary-companies .partners__item, .foreign-producers .partners__item, .russian-producers .partners__item {
-      margin-top: -20px; }
     .russian-participants .partners__sum, .intermediary-companies .partners__sum, .foreign-producers .partners__sum, .russian-producers .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .foreign-producers .company-producer__sum, .foreign-producers .company-foreign__sum, .foreign-producers .company-russian__sum {
       position: relative;
       top: 10px;
@@ -139,12 +137,12 @@ body {
     margin-bottom: 40px;
     width: 200px;
     min-height: 40px;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 40px 20px 40px;
     background-color: #fff; }
   .intermediary-companies .partners__sum, .intermediary-companies .company-base__sum, .intermediary-companies .company-base__sum--other, .intermediary-companies .foreign-producers .company-producer__sum, .foreign-producers .intermediary-companies .company-producer__sum, .intermediary-companies .foreign-producers .company-foreign__sum, .foreign-producers .intermediary-companies .company-foreign__sum, .intermediary-companies .foreign-producers .company-russian__sum, .foreign-producers .intermediary-companies .company-russian__sum {
     position: relative;
     top: 10px;
-    left: 280px;
+    left: 85%;
     width: 50px;
     height: 20px;
     background-color: #0f75a2;
@@ -180,7 +178,7 @@ body {
     .intermediary-companies .company-base .russian-partner .partners__name, .intermediary-companies .company-base .russian-partner .foreign-producers .company-foreign__name, .foreign-producers .intermediary-companies .company-base .russian-partner .company-foreign__name, .intermediary-companies .company-base .russian-partner .foreign-producers .company-russian__name, .foreign-producers .intermediary-companies .company-base .russian-partner .company-russian__name {
       width: 320px; }
     .intermediary-companies .company-base .russian-partner .partners__sum, .intermediary-companies .company-base .russian-partner .company-base__sum, .intermediary-companies .company-base .russian-partner .company-base__sum--other, .intermediary-companies .company-base .russian-partner .foreign-producers .company-producer__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-producer__sum, .intermediary-companies .company-base .russian-partner .foreign-producers .company-foreign__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-foreign__sum, .intermediary-companies .company-base .russian-partner .foreign-producers .company-russian__sum, .foreign-producers .intermediary-companies .company-base .russian-partner .company-russian__sum {
-      left: 400px; }
+      left: 95%; }
 
 .foreign-producers__h1 {
   font-size: 18px;
